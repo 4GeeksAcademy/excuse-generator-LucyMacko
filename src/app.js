@@ -9,7 +9,7 @@ window.onload = function() {
   document.getElementById("excuse").innerHTML = generateExcuse();
 };
 
-function generateExcuse() {
+const generateExcuse = () => {
   let who = ["The dog", "My grandma", "A turtle", "The burgler"];
   let action = ["destroyed", "chewed", "tore", "cut"];
   let what = ["my homework", "the bills", "the cake "];
@@ -29,4 +29,4 @@ function generateExcuse() {
     " " +
     when[Math.floor(Math.random() * when.length)]
   );
-}
+};
